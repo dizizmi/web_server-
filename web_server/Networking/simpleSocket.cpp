@@ -40,5 +40,9 @@ struct sockaddr_in HDE::simpleSocket::get_address()
 }
 int HDE::simpleSocket::get_sock()
 {
+    return sock;
+}
+int HDE::simpleSocket::get_connection()
+{
     return connection;
 }

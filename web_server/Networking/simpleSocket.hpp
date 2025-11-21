@@ -25,7 +25,8 @@ private:
     
 public:
     //constructor
-    simpleSocket(int domain, int service, int protocol, int port, u_long interface); /* note: type of IP, service requried, protocol used to support socket operation */
+    simpleSocket(int domain, int service, int protocol, int port, u_long interface); /* note: type of IP, service requried, protocol used to support socket operation, usign long of ip address (interf) */
+    
     //virtual func to connect to a netw
     virtual int connect_network(int sock, struct sockaddr_in address) = 0;
     //func to test sockets and connections
